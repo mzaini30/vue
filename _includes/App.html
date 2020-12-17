@@ -1,0 +1,41 @@
+<!--
+
+Dibuat oleh Zen
+hello-zen.surge.sh
+
+-->
+<!DOCTYPE HTML>
+<html>
+ <head>
+  
+  <title>Vue Template</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet"/>
+  <link rel="icon" href="https://duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png"/>
+  <meta property="og:image" content="http://www.abine.com/blog/wp-content/uploads/2014/06/DuckDuckGo.png"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8"/>
+  <script src="/dist/vue.min.js"></script>
+  <script src="/dist/vue-router.min.js"></script>
+ </head>
+ <body>
+  <div class="vue">
+   <router-view></router-view>
+  </div>
+  {% include index.html %}
+  <script>
+   new Vue({
+    el: ".vue",
+    router: new VueRouter({
+     mode: "history",
+     routes: [
+      {
+       path: "/",
+       component: index
+      }
+     ]
+    })
+   })
+  </script>
+ </body>
+</html>
