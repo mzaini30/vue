@@ -1,8 +1,10 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "run-p dev:*",
+    "dev:vite": "vite",
+    "dev:routify": "node routify.js -w",
+    "build": "node routify.js && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
