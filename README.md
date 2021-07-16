@@ -24,7 +24,7 @@ degit mzaini30/vue new-project
 
 ## Fitur
 
-1. PWA udah otomatis
+1. PWA udah otomatis (setting manifest di `vite.config.js`)
 2. Router berbasis file menggunakan [Vue Route Generator](https://www.npmjs.com/package/vue-route-generator)
 3. Global Store dengan [Provide Inject](https://vuejsdevelopers.com/2020/10/05/composition-api-vuex/)
 4. Menggunakan [Vue Global API](https://www.npmjs.com/package/vue-global-api)
