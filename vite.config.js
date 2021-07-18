@@ -15,6 +15,9 @@ export default defineConfig({
         sizes: '200x200',
         type: 'image/png'
       }]
+    },
+    workbox: {
+      globPatterns: ['**/*']
     }
   })]
 })
