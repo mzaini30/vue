@@ -10,3 +10,4 @@ npx degit mzaini30/vue new-project
 
 1. [Vite Plugin Pages](https://github.com/hannoeru/vite-plugin-pages)
 1. [Vue Global API](https://www.npmjs.com/package/vue-global-api)
+1. [Windi CSS](https://windicss.org/)
