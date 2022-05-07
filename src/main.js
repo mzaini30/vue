@@ -1,13 +1,11 @@
-import 'vue-global-api'
-import App from './App.vue'
-import routes from "virtual:generated-pages"
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from "vue-router"
-import 'virtual:windi.css'
+import App from './App.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from '~pages'
 
 const router = createRouter({
-	routes,
-	history: createWebHistory()
+  routes,
+  history: createWebHistory()
 })
 
 createApp(App).use(router).mount('#app')

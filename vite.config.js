@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from "vite-plugin-pages"
-import WindiCSS from 'vite-plugin-windicss'
+import vue from '@vitejs/plugin-vue'
+import pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [Vue(), Pages(), WindiCSS()]
+  plugins: [vue(), pages()]
 })

@@ -1,13 +1,7 @@
-# Template Vue
+# Vue 3 + Vite
 
-## Download Template
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-```bash
-npx degit mzaini30/vue new-project
-```
+## Recommended IDE Setup
 
-## Plugins
-
-1. [Vite Plugin Pages](https://github.com/hannoeru/vite-plugin-pages)
-1. [Vue Global API](https://www.npmjs.com/package/vue-global-api)
-1. [Windi CSS](https://windicss.org/)
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
