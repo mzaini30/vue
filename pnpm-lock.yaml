@@ -3,6 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/head': ^0.7.6
+  markdown-it-prism: ^2.2.4
+  prism-theme-vars: ^0.2.2
   vite: ^2.9.7
   vite-plugin-md: ^0.13.1
   vite-plugin-pages: ^0.23.0
@@ -14,6 +16,8 @@ specifiers:
 
 dependencies:
   '@vueuse/head': 0.7.6_vue@3.2.33
+  markdown-it-prism: 2.2.4
+  prism-theme-vars: 0.2.2
   vite-plugin-md: 0.13.1_vite@2.9.8
   vite-plugin-pages: 0.23.0_vite@2.9.8
   vite-plugin-pages-sitemap: 1.2.2
@@ -868,6 +872,13 @@ packages:
       sourcemap-codec: 1.4.8
     dev: false
 
+  /markdown-it-prism/2.2.4:
+    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      prismjs: 1.28.0
+    dev: false
+
   /markdown-it/13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
     hasBin: true
@@ -951,6 +962,15 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /prism-theme-vars/0.2.2:
+    resolution: {integrity: sha512-EL9ifuU/F8tEldoCa2sspiiLWysCL54xDbf2gN/ubwdtbuJROqOGopG5kSwunapwaioT+jLUQ/Ky+7jnv62xJA==}
+    dev: false
+
+  /prismjs/1.28.0:
+    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
+    engines: {node: '>=6'}
+    dev: false
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
