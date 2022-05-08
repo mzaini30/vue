@@ -6,6 +6,7 @@ import { createHead } from '@vueuse/head'
 import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from '~pages'
 // import generatedRoutes from 'virtual:generated-pages'
+import RouterPrefetch from 'vue-router-prefetch'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -15,4 +16,4 @@ const router = createRouter({
 })
 const head = createHead()
 
-createApp(App).use(router).use(head).mount('#app')
+createApp(App).use(router).use(RouterPrefetch).use(head).mount('#app')
