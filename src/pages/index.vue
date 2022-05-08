@@ -1,3 +1,3 @@
 <template>
-	<p>Hai</p>
+	<p>hai</p>
 </template>

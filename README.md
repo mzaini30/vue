@@ -1,7 +1,51 @@
-# Vue 3 + Vite
+# Template Vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Meletakkan File-File Vue dan Markdown
 
-## Recommended IDE Setup
+Di folder `src/pages/`.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Meletakkan File-File Static
+
+Di folder `public/`.
+
+## Mengubah Base URL (untuk keperluan sitemap)
+
+Pada file `vite.config.js`, pada bagian:
+
+```javascript
+const hostname = 'http://localhost:3000/'
+```
+
+## Contoh File Markdown dengan Head
+
+```markdown
+---
+title: About
+---
+
+# Ini adalah Halaman About
+
+Lumayan
+```
+
+## Ngelink ke Halaman Lain
+
+```html
+<router-link to="/about">Halaman About</router-link>
+```
+
+## Contoh Menggunakan Head pada Halaman Vue
+
+```html
+<script setup="">
+	import {Head} from '@vueuse/head'
+</script>
+
+<template>
+	<Head>
+		<title>Hai...</title>
+	</Head>
+
+	<p>Ini adalah bagian beranda</p>
+</template>
+```

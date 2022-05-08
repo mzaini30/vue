@@ -1,8 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import routes from '~pages'
+// import routes from '~pages'
 import { createHead } from '@vueuse/head'
+import { setupLayouts } from 'virtual:generated-layouts'
+import generatedRoutes from '~pages'
+// import generatedRoutes from 'virtual:generated-pages'
+
+const routes = setupLayouts(generatedRoutes)
 
 const router = createRouter({
   routes,
