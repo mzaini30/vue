@@ -10,7 +10,6 @@
   "dependencies": {
     "@vueuse/head": "^0.7.6",
     "markdown-it-prism": "^2.2.4",
-    "pinia": "^2.0.14",
     "prism-theme-vars": "^0.2.2",
     "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",
