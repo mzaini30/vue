@@ -1,5 +1,13 @@
 # Template Vue
 
+## Menggunakan Vue Editor
+
+Tambahkan di `~/.bashrc`:
+
+```bash
+export VUE_EDITOR=subl
+```
+
 ## Meletakkan File-File Vue dan Markdown
 
 Di folder `src/pages/`.
