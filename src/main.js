@@ -7,6 +7,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from '~pages'
 // import generatedRoutes from 'virtual:generated-pages'
 import RouterPrefetch from 'vue-router-prefetch'
+import './index.css'
 
 const routes = setupLayouts(generatedRoutes)
 
