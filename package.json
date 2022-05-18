@@ -23,6 +23,7 @@
     "vite-plugin-pages-sitemap": "^1.2.2",
     "vite-plugin-vue-inspector": "^0.5.7",
     "vite-plugin-vue-layouts": "^0.6.0",
+    "vite-plugin-yaml2": "^0.0.4",
     "vue": "^3.2.25",
     "vue-router": "^4.0.15",
     "vue-router-prefetch": "2"

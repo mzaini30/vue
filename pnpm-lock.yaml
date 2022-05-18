@@ -18,6 +18,7 @@ specifiers:
   vite-plugin-pages-sitemap: ^1.2.2
   vite-plugin-vue-inspector: ^0.5.7
   vite-plugin-vue-layouts: ^0.6.0
+  vite-plugin-yaml2: ^0.0.4
   vue: ^3.2.25
   vue-router: ^4.0.15
   vue-router-prefetch: '2'
@@ -38,6 +39,7 @@ dependencies:
   vite-plugin-pages-sitemap: 1.2.2
   vite-plugin-vue-inspector: 0.5.7_vite@2.9.8
   vite-plugin-vue-layouts: 0.6.0_husqietd6xoepun2tc4v73afle
+  vite-plugin-yaml2: 0.0.4
   vue: 3.2.33
   vue-router: 4.0.15_vue@3.2.33
   vue-router-prefetch: 2.0.2_ofvjdm2rlvp4kiklsgtgpezcmi
@@ -1489,6 +1491,13 @@ packages:
       esprima: 4.0.1
     dev: false
 
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: false
+
   /jsesc/2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
     engines: {node: '>=4'}
@@ -1938,6 +1947,11 @@ packages:
       is-number: 7.0.0
     dev: false
 
+  /tosource/2.0.0-alpha.3:
+    resolution: {integrity: sha512-KAB2lrSS48y91MzFPFuDg4hLbvDiyTjOVgaK7Erw+5AmZXNq4sFRVn8r6yxSLuNs15PaokrDRpS61ERY9uZOug==}
+    engines: {node: '>=10'}
+    dev: false
+
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: false
@@ -2029,6 +2043,13 @@ packages:
       vue-router: 4.0.15_vue@3.2.33
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /vite-plugin-yaml2/0.0.4:
+    resolution: {integrity: sha512-PPAUmd56uDVWWR/0EEkBM8d4laPVi8e3cHLzYKqa6xwswzW1MLhU8cb0WYaxkKheYXLnijFnreEYxIO/5kPf8g==}
+    dependencies:
+      js-yaml: 4.1.0
+      tosource: 2.0.0-alpha.3
     dev: false
 
   /vite/2.9.8:

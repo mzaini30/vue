@@ -6,12 +6,14 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 import Layouts from 'vite-plugin-vue-layouts';
 import Prism from 'markdown-it-prism'
 import Inspector from "vite-plugin-vue-inspector"
+import yaml from 'vite-plugin-yaml2'
 
 const hostname = 'http://localhost:3000/'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    yaml(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--
     }), 
