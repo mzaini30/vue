@@ -1,48 +1,48 @@
-# Template Vue
+# Vue Starter 
 
-## Menggunakan Vue Editor
+## Usibg Vue Editor
 
-Tambahkan di `~/.bashrc`:
+Add in `~/.bashrc`:
 
 ```bash
 export VUE_EDITOR=subl
 ```
 
-## Meletakkan File-File Vue dan Markdown
+## Place Vue Files and Markdown
 
-Di folder `src/pages/`.
+In `src/pages/`.
 
-## Meletakkan File-File Static
+## Place Static Files
 
-Di folder `public/`.
+In `public/`.
 
-## Mengubah Base URL (untuk keperluan sitemap)
+## Modify Base URL (for sitemap)
 
-Pada file `vite.config.js`, pada bagian:
+In `vite.config.js`, in section:
 
 ```javascript
 const hostname = 'http://localhost:3000/'
 ```
 
-## Contoh File Markdown dengan Head
+## Markdown File Example with Head
 
 ```markdown
 ---
 title: About
 ---
 
-# Ini adalah Halaman About
+# This is about page
 
-Lumayan
+Good
 ```
 
-## Ngelink ke Halaman Lain
+## Link to Other Page
 
 ```html
-<router-link to="/about">Halaman About</router-link>
+<router-link to="/about">About page</router-link>
 ```
 
-## Contoh Menggunakan Head pada Halaman Vue
+## Using Head in Vue Page
 
 ```html
 <script setup="">
@@ -51,9 +51,9 @@ Lumayan
 
 <template>
 	<Head>
-		<title>Hai...</title>
+		<title>Hi...</title>
 	</Head>
 
-	<p>Ini adalah bagian beranda</p>
+	<p>This is home</p>
 </template>
 ```
