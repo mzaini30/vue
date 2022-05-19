@@ -46,14 +46,14 @@ Good
 
 ```html
 <script setup="">
-	import {Head} from '@vueuse/head'
+ import {Head} from '@vueuse/head'
 </script>
 
 <template>
-	<Head>
-		<title>Hi...</title>
-	</Head>
+ <Head>
+  <title>Hi...</title>
+ </Head>
 
-	<p>This is home</p>
+ <p>This is home</p>
 </template>
 ```
