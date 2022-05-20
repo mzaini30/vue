@@ -7,6 +7,7 @@ import Layouts from 'vite-plugin-vue-layouts';
 import Prism from 'markdown-it-prism'
 import Inspector from "vite-plugin-vue-inspector"
 import yaml from 'vite-plugin-yaml2'
+import legacy from "@vitejs/plugin-legacy"
 
 const hostname = 'http://localhost:3000/'
 
@@ -14,6 +15,7 @@ const hostname = 'http://localhost:3000/'
 export default defineConfig({
   plugins: [
     yaml(),
+    legacy(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--
     }), 
