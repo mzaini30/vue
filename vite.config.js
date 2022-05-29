@@ -1,13 +1,15 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import pages from 'vite-plugin-pages'
-import Markdown, {meta} from 'vite-plugin-md'
 import generateSitemap from 'vite-plugin-pages-sitemap'
-import Layouts from 'vite-plugin-vue-layouts';
-import Prism from 'markdown-it-prism'
 import Inspector from "vite-plugin-vue-inspector"
-import yaml from 'vite-plugin-yaml2'
+import Layouts from 'vite-plugin-vue-layouts';
 import legacy from "@vitejs/plugin-legacy"
+import Markdown, {meta} from 'vite-plugin-md'
+import pages from 'vite-plugin-pages'
+import Prism from 'markdown-it-prism'
+import unocss from 'unocss/vite'
+import vue from '@vitejs/plugin-vue'
+import yaml from 'vite-plugin-yaml2'
+import { defineConfig } from 'vite'
+import {presetAttributify, presetUno} from 'unocss'
 
 const hostname = 'http://localhost:3000/'
 
@@ -15,6 +17,12 @@ const hostname = 'http://localhost:3000/'
 export default defineConfig({
   plugins: [
     yaml(),
+    unocss({
+      presets: [
+        presetAttributify(),
+        presetUno()
+      ]
+    }),
     legacy(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--
