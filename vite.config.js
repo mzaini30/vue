@@ -9,6 +9,7 @@ import unocss from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import yaml from 'vite-plugin-yaml2'
 import { defineConfig } from 'vite'
+import apply from '@unocss/transformer-directives'
 
 const hostname = 'http://localhost:3000/'
 
@@ -16,7 +17,11 @@ const hostname = 'http://localhost:3000/'
 export default defineConfig({
   plugins: [
     yaml(),
-    unocss(),
+    unocss({
+      transformers: [
+        apply()
+      ]
+    }),
     legacy(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--

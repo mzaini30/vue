@@ -4,3 +4,9 @@
 		<p class="text-zinc-500">Welcome to this Vue template, cooked by Zen.</p>
 	</div>
 </template>
+
+<style scoped="">
+	* {
+		@apply italic text-center
+	}
+</style>

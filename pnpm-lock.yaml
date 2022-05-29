@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@unocss/reset': ^0.35.0
+  '@unocss/transformer-directives': ^0.35.1
   '@vitejs/plugin-legacy': ^1.8.2
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/head': ^0.7.6
@@ -21,6 +22,7 @@ specifiers:
 
 dependencies:
   '@unocss/reset': 0.35.0
+  '@unocss/transformer-directives': 0.35.1
   '@vitejs/plugin-legacy': 1.8.2_vite@2.9.8
   '@vueuse/head': 0.7.6_vue@3.2.33
   markdown-it-prism: 2.2.4
@@ -485,6 +487,10 @@ packages:
     resolution: {integrity: sha512-h2AeTLAiBWu6IZzR1tN2H/ypuCbc9CK7t8H/o2ncG22Jfoh6FO09jQPoiRZr72PcpDf2/0snN94iZLnjvPGZOg==}
     dev: false
 
+  /@unocss/core/0.35.1:
+    resolution: {integrity: sha512-LquoI5oomcabpplGZKvBe9d66UrPXpTMpNJTPCrXOr1r75PYnjtKLP/mohFpAW+K3diXRhLI7pCp9z4i7LTRZA==}
+    dev: false
+
   /@unocss/inspector/0.34.1:
     resolution: {integrity: sha512-4V4gUy1bykm/oOtEAXT5Lc98Bxp6k+vp141O/Yp+AMgX4wK0+dB9ELrQx7gzVLQauQv209xuMZ9tscKf0VEZaA==}
     dependencies:
@@ -564,6 +570,13 @@ packages:
     resolution: {integrity: sha512-aLNa3uQ1WP+GYgLB2xyhfn6yXAuSquNlKgS/muGpc8oCSOMtAtaxjkdsAFzK8CRgZUYGMB3TBynJSBQhizTlDQ==}
     dependencies:
       '@unocss/core': 0.34.1
+      css-tree: 2.1.0
+    dev: false
+
+  /@unocss/transformer-directives/0.35.1:
+    resolution: {integrity: sha512-CLWCMu4CopOtyAxe3IrNRCygBajy02Y5kbcIErhCauImKdmNPKQ71Ekib966SFhSr/FKhQdelZTWpRfLkmyhng==}
+    dependencies:
+      '@unocss/core': 0.35.1
       css-tree: 2.1.0
     dev: false
 
