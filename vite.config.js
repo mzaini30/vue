@@ -9,7 +9,6 @@ import unocss from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import yaml from 'vite-plugin-yaml2'
 import { defineConfig } from 'vite'
-import {presetAttributify, presetUno} from 'unocss'
 
 const hostname = 'http://localhost:3000/'
 
@@ -17,12 +16,7 @@ const hostname = 'http://localhost:3000/'
 export default defineConfig({
   plugins: [
     yaml(),
-    unocss({
-      presets: [
-        presetAttributify(),
-        presetUno()
-      ]
-    }),
+    unocss(),
     legacy(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--
