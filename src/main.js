@@ -9,6 +9,7 @@ import generatedRoutes from '~pages'
 import RouterPrefetch from 'vue-router-prefetch'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import lazy from 'vue-lazyload'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -25,4 +26,9 @@ const router = createRouter({
 })
 const head = createHead()
 
-createApp(App).use(router).use(RouterPrefetch).use(head).mount('#app')
+createApp(App)
+  .use(router)
+  .use(RouterPrefetch)
+  .use(head)
+  .use(lazy)
+  .mount('#app')

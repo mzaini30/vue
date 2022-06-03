@@ -57,3 +57,15 @@ Good
  <p>This is home</p>
 </template>
 ```
+
+## Using Vue Lazy Load
+
+```html
+<script setup>
+  const image = '/cat.jpg'
+</script>
+
+<template>
+  <img v-lazy='image' />
+</template>
+```
